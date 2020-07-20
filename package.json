@@ -1,0 +1,51 @@
+{
+  "name": "recipebookapp",
+  "version": "1.0.0",
+  "description": "A MERNStack app for recipes and meal planning",
+  "main": "server.js",
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"cross-env nodemon server.js\" \"npm run client\"",
+    "client": "cd client && npm start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm run build"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AJFree458/React_RecipeBook.git"
+  },
+  "author": "Arthur Freeman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AJFree458/React_RecipeBook/issues"
+  },
+  "homepage": "https://github.com/AJFree458/React_RecipeBook#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "nodemon": "^2.0.4",
+    "prettier": "2.0.5"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "if-env": "^1.0.4"
+  }
+}
