@@ -4,11 +4,14 @@ const Schema = mongoose.Schema;
 
 const mealPlanSchema = new Schema({
   author: { type: Schema.Types.ObjectId, ref: 'User' },
-  week: {
+  planweek: {
     type: String,
   },
-  day: [
+  week: [
     {
+      day: {
+        type: String,
+      },
       breakfast: {
         type: String,
       },
