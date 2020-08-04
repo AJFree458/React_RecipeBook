@@ -18,21 +18,21 @@ function App() {
       <Head />
       <Router>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
 
-          <Route path="/register" component={Register} />
+          <Route exact path="/register" component={Register} />
 
-          <Route path="/login" component={Login} />
+          <Route exact path="/login" component={Login} />
 
-          <Route path="/mealplan" component={MealPlanList} />
+          <Route exact path="/mealplan" component={MealPlanList} />
 
-          <Route path="/newmealplan" component={NewMealPlan} />
+          <Route exact path="/newmealplan" component={NewMealPlan} />
 
-          <Route path="/newrecipe" component={NewRecipe} />
+          <Route exact path="/newrecipe" component={NewRecipe} />
 
-          <Route path="/recipe/:id" component={RecipeView} />
+          <Route exact path="/recipe/:id" component={RecipeView} />
 
-          <Route path="/mealplan/:id" component={MealPlanView} />
+          <Route exact path="/mealplan/:id" component={MealPlanView} />
         </Switch>
       </Router>
     </div>
