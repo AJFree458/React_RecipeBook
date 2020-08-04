@@ -66,4 +66,5 @@ export default {
   SignIn,
   getCurrentUser,
   GetAuthStatus,
+  IsLoggedIn,
 };
