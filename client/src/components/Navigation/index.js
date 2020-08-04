@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LandingNav from './LandingNav';
 import MemberNav from './MemberNav';
 import AuthService from '../../services/AuthService';
