@@ -1,0 +1,9 @@
+.bannerimage {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.055) 0%,
+      rgba(255, 255, 255, 0.308) 100%
+    ),
+    url('../../img/cuttingboardwithingredients.png');
+  background-size: cover;
+}
