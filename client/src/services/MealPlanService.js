@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-const API_URL = '/api/mealplan';
-
 const CreateMealPlan = (author, planweek, week) => {
-  console.log('----Recipe Service Axios Call----');
+  console.log('----Meal sPlan Service Axios Call----');
 
   return axios.post('/api/mealplan', {
     author,
