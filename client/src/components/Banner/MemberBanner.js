@@ -12,7 +12,7 @@ function MemberBanner() {
         <Button color="primary" href="/newrecipe" role="button">
           New Recipe
         </Button>
-        <Button color="primary" href="/newmealplan" role="button">
+        <Button color="primary" href="/mealplan" role="button">
           Meal Plan
         </Button>
       </Jumbotron>
