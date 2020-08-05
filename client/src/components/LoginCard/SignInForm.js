@@ -63,7 +63,7 @@ const LoginForm = (props) => {
           setLoading(false);
           setMessage(resMessage);
         } else if (response.data.id) {
-          window.location.href = '/SignIn';
+          window.location.href = '/';
         }
       },
 
