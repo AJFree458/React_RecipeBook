@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { verifySignUp } = require('../../middleware');
-const controller = require('../../controllers/auth.controller');
+const controller = require('../../controllers/authController');
 
 router.use(function (req, res, next) {
   res.header(

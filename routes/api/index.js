@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const recipeRoutes = require('./recipe');
-const auth = require('./authRoutes');
-const user = require('./user');
+const auth = require('./auth.routes');
+const user = require('./auth.routes');
 const mealPlanRoutes = require('./mealPlan');
 
 // Recipe routes
