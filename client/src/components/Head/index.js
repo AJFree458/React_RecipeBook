@@ -11,8 +11,6 @@ const Head = () => {
           name="description"
           content="Web site for the creation and viewing of recipes and meal plans"
         />
-        <link rel="manifest" href="./manifest.json" />
-        <link rel="icon" href="./favicon.ico" />
       </Helmet>
     </div>
   );
