@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const API_URL = '/api/recipe';
+
 const CreateRecipe = (
   author,
   recipeName,
@@ -13,7 +15,7 @@ const CreateRecipe = (
 ) => {
   console.log('----Recipe Service Axios Call----');
 
-  return axios.post('api/recipe', {
+  return axios.post(API_URL, {
     author,
     recipeName,
     description,
@@ -27,11 +29,11 @@ const CreateRecipe = (
 };
 
 const getAllRecipes = () => {
-  return axios.get('api/recipe');
+  return axios.get(API_URL);
 };
 
 const getRecipeById = (id) => {
-  return axios.get('api/recipe/' + id);
+  return axios.get(API_URL + '/' + id);
 };
 
 export default {
