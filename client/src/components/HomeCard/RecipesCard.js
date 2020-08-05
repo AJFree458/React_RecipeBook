@@ -18,10 +18,10 @@ const RecipesCard = () => {
         <Row>
           <div className="col-md-12">
             <Card>
-              <CardHeader text-center>
+              <CardHeader className="text-center">
                 <h5>Your Recipes</h5>
               </CardHeader>
-              <CardBody text-center>
+              <CardBody className="text-center">
                 <Table bordered>
                   <thead>
                     <tr>
@@ -52,7 +52,7 @@ function RecipeRow({ RowData, RowNum }) {
   return (
     <tr key={RowNum}>
       <td>
-        <a href={`/Recipe/${RowData._id}`}>{RowData.title}</a>
+        <a href={`/recipe/${RowData._id}`}>{RowData.recipeName}</a>
       </td>
       <td>{RowData.cookTime}</td>
       <td>{RowData.prepTime}</td>
