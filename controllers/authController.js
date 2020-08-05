@@ -7,15 +7,11 @@ var bcrypt = require('bcryptjs');
 
 exports.signup = (req, res) => {
   console.log('======== AuthController: signup() ============');
-  console.log('firstname: ' + req.body.firstname);
-  console.log('lastname: ' + req.body.lastname);
   console.log('email: ' + req.body.username);
   console.log('password: ' + req.body.password);
   console.log('==============================================');
 
   const user = new User({
-    firstname: req.body.firstname,
-    lastname: req.body.lastname,
     email: req.body.username,
     password: bcrypt.hashSync(req.body.password, 8),
   });
