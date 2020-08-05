@@ -7,7 +7,7 @@ function Login() {
   return (
     <div>
       <Helmet>
-        <title>RecipeBook Register</title>
+        <title>Register</title>
       </Helmet>
       <Navigation />
       <RegistrationForm />

@@ -7,7 +7,7 @@ const NewRecipe = () => {
   return (
     <div>
       <Helmet>
-        <title>RecipeBook</title>
+        <title>New Recipe</title>
       </Helmet>
       <nav>
         <Navigation />
