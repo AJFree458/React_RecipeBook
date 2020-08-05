@@ -9,10 +9,10 @@ function MemberBanner() {
         <h1 className="display-4">Welcome to Your RecipeBook!</h1>
         <h2>Save and view your recipes here.</h2>
         <hr className="my-4" />
-        <Button color="primary" href="/register" role="button">
+        <Button color="primary" href="/newrecipe" role="button">
           New Recipe
         </Button>
-        <Button color="primary" href="/login" role="button">
+        <Button color="primary" href="/newmealplan" role="button">
           Meal Plan
         </Button>
       </Jumbotron>
